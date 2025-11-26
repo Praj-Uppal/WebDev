@@ -1,0 +1,115 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+#nameAndLinks {
+    padding: 1rem 2rem;
+}
+
+#topLeftName {
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#topLinks a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+}
+
+#topLinks a:hover {
+    text-decoration: underline;
+}
+
+
+#titleSection {
+    text-align: center;
+    margin: 1.5rem 0 2rem 0;
+}
+
+#titleHomePage {
+    font-size: 3.6rem;
+    font-family: cursive;
+    font-style: italic;
+}
+
+#titleCaption {
+    font-size: 1.8rem;
+    color: slategrey;
+}
+
+
+.sectionTitle {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+
+#aboutSection {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.aboutText {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+
+#bodyTable {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+th {
+    font-size: 2rem;
+    font-family: cursive;
+    padding: 1rem;
+}
+
+td {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.centerCell {
+    text-align: center;
+}
+
+.cellTopic {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#aboutContainer {
+ display: flex;
+ align-items: flex-start;
+ gap: 20px;   
+}
+
+#profilePicture {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    align-self:baseline;
+}
