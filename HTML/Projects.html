@@ -1,49 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
-    <link rel="stylesheet" href="main.css" />
-  </head>
 
-  <body>
-    <section id="nameAndLinks">
-      <h1 id="topLeftName">
-        Prajwal Uppal
-        <span id="topLinks">
-          <a href="Home.html"> Home </a> / <a href="#"> Projects</a> /
-          <a href="Home.html#aboutSection">About Me</a> /
-          <a href="Contact.html"> Contact</a>
-        </span>
-      </h1>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
 
-    <section id="titleSection">
-      <span id="titleHomePage">Projects</span>
-      <h2 id="titleCaption">A list of my technical and creative work.</h2>
-    </section>
+<body>
+  <section id="nameAndLinks">
+    <h1 id="topLeftName">
+      Prajwal Uppal
+      <span id="topLinks">
+        <a href="Home.html"> Home </a> / <a href="#"> Projects</a> /
+        <a href="Home.html#aboutSection">About Me</a> /
+        <a href="Contact.html"> Contact</a>
+      </span>
+    </h1>
+  </section>
 
-    <hr />
+  <section id="titleSection">
+    <span id="titleHomePage">Projects</span>
+    <h2 id="titleCaption">A list of my technical and creative work.</h2>
+  </section>
 
-    <section class="pageContent">
-      <ul class="projectList">
-        <li>
-          <strong>HTML Portfolio Site</strong> – A clean, minimal website made
-          using HTML + CSS.
-        </li>
-        <li>
-          <strong>Terminal Farm Game</strong> – C++ terminal-based farming
-          simulator.
-        </li>
-        <li>
-          <strong>Wordle Recreation</strong> – MATLAB remake of the Wordle game.
-        </li>
-        <li>
-          <strong>Gear Design</strong> – 3D-printed differential brake gear
-          mechanism.
-        </li>
-      </ul>
-    </section>
-  </body>
+  <hr />
+
+  <section class="pageContent">
+    <div class="projects">
+      <a class="projectLink" href="Home.html" target="_blank" rel="noopener noreferrer">
+        <article class="project">
+          <h3>HTML Portfolio Website</h3>
+          <p class="projectDesc">
+            Personal portfolio website designed and built from scratch using
+            semantic HTML and custom CSS. Focused on clarity, responsiveness, and
+            clean layout without frameworks.
+          </p>
+          <ul class="projectTags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Responsive Design</li>
+          </ul>
+        </article>
+      </a>
+      <a class="projectLink" href="https://github.com/Praj-Uppal/FarmGame" target="_blank" rel="noopener noreferrer">
+        <article class="project">
+          <h3>Terminal-Based Farming Game</h3>
+          <p class="projectDesc">
+            Object-oriented farming simulation developed in C++ using <code>ncurses</code>.
+            Implements real-time input handling, game-state management, and modular
+            class design.
+          </p>
+          <ul class="projectTags">
+            <li>C++</li>
+            <li>OOP</li>
+            <li>ncurses</li>
+            <li>Game State Management</li>
+          </ul>
+        </article>
+      </a>
+      <a class="projectLink" href="https://github.com/Praj-Uppal/WordleinMatlab" target="_blank"
+        rel="noopener noreferrer">
+        <article class="project">
+          <h3>Wordle Recreation (MATLAB)</h3>
+          <p class="projectDesc">
+            Functional recreation of Wordle implemented in MATLAB, focusing on
+            string processing, control flow, and user feedback logic.
+          </p>
+          <ul class="projectTags">
+            <li>MATLAB</li>
+            <li>String Processing</li>
+            <li>Algorithm Design</li>
+          </ul>
+        </article>
+      </a>
+      <a class="projectLink"
+        href="https://www.notion.so/DIY-Irrigation-System-2c6e80f544fa80089d91f333d89253d3?source=copy_link"
+        target="_blank" rel="noopener noreferrer">
+        <article class="project">
+          <h3>DIY Irrigation System</h3>
+          <p class="projectDesc">
+            A personal engineering project to create a bespoke irrigation system using limited resources and custom
+            3D-printed parts.
+          </p>
+          <ul class="projectTags">
+            <li>CAD</li>
+            <li>Mechanical Design</li>
+            <li>3D Printing</li>
+          </ul>
+        </article>
+      </a>
+    </div>
+  </section>
+</body>
+
 </html>
