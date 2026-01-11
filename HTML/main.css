@@ -8,11 +8,20 @@ body {
   font-family: Arial, sans-serif;
 }
 
+:root {
+  --accent: #6D8196;
+  --accent-light: #e9f0f7;
+  --border-soft: #e0e0e0;
+  --text-muted: #555;
+  --card-bg: #ffffff;
+}
+
 
 #nameAndLinks {
   max-width: 1100px;
   margin: 0 auto;
   padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--border-soft);
 }
 
 #topLeftName {
@@ -32,6 +41,12 @@ body {
   text-decoration: underline;
 }
 
+#topLinks a.active {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 
 #titleSection {
   text-align: center;
@@ -46,7 +61,7 @@ body {
 
 #titleCaption {
   font-size: 1.8rem;
-  color: slategrey;
+  color: var(--accent);
 }
 
 
@@ -54,6 +69,18 @@ body {
   text-align: center;
   font-size: 2.4rem;
   margin-bottom: 1rem;
+  display: table;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sectionTitle:after {
+  content: "";
+  display: block;
+  height: 3px;
+  margin: 0.8rem auto;
+  background-color: var(--accent);
+  border-radius: 2px;
 }
 
 
@@ -66,6 +93,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #333;
+  text-align: justify;
 }
 
 
@@ -120,6 +148,7 @@ td {
   object-fit: cover;
   border-radius: 50%;
   align-self: baseline;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 hr {
@@ -154,11 +183,11 @@ hr {
 }
 
 .projectTags li {
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 0.25rem 0.6rem;
   border: 1px solid #ccc;
   border-radius: 999px;
-  background-color: #f0f0f0;
+  background-color: #d8e3ec;
   border: none;
   color: #555;
 }
@@ -174,7 +203,7 @@ hr {
   padding: 1.5rem 1.75rem;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: var(--card-bg);
 }
 
 
@@ -183,13 +212,13 @@ hr {
 }
 
 .project h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.4rem;
 }
 
 .projectDesc {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   color: #444;
 }
@@ -211,7 +240,7 @@ hr {
 
 .projectLink:hover .project {
   transform: translateY(-10px);
-  border-color: #bbb;
+  border-color: #2f5d8a;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
@@ -224,21 +253,25 @@ hr {
 
 .overviewGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  align-items: stretch;
 }
 
 .overviewCard {
   padding: 1.5rem 1.75rem;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--border-soft);
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: var(--card-bg);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .overviewCard h3 {
   margin-bottom: 0.8rem;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
@@ -252,7 +285,137 @@ hr {
   font-size: 1.45rem;
 }
 
+.overviewCard:hover {
+  transform: translateY(-10px);
+  border-color: #bbb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.overviewCard {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  cursor: pointer;
+}
+
 .overviewItem {
   margin-top: 1rem;
   font-size: 1.5rem;
+}
+
+.overviewCard a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.overviewCard a:hover {
+  text-decoration: underline;
+}
+
+
+.contactCard {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2.5rem 2.5rem;
+  background-color: #ffffff;
+  border: 1px solid var(--border-soft, #e0e0e0);
+  border-radius: 10px;
+}
+
+.contactIntro {
+  font-size: 1.6rem;
+  color: #444;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contactList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.5rem;
+}
+
+.contactList li:last-child {
+  border-bottom: none;
+}
+
+.contactList span {
+  font-weight: 600;
+  color: #333;
+}
+
+.contactList a {
+  color: var(--accent, #2f5d8a);
+  text-decoration: none;
+}
+
+.contactList a:hover {
+  text-decoration: underline;
+}
+
+
+.experienceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+}
+
+.experienceColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experienceCard {
+  padding: 1.6rem 1.8rem;
+  background-color: #ffffff;
+  border: 1px solid var(--border-soft, #e0e0e0);
+  border-radius: 8px;
+}
+
+.experienceCard h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.experienceMeta {
+  font-size: 1.45rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.experienceCard ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.experienceCard li {
+  margin-bottom: 0.5rem;
+  font-size: 1.45rem;
+}
+
+.overviewLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.overviewLink:hover .overviewCard {
+  transform: translateY(-10px);
+  border-color: var(--accent, #2f5d8a);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.overviewCard p {
+  font-size: 1.45rem;
 }

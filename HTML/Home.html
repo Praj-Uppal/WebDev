@@ -14,8 +14,8 @@
     <h1 id="topLeftName">
       Prajwal Uppal
       <span id="topLinks">
-        <a href="Home.html">Home</a> / <a href="Projects.html">Projects</a> /
-        <a href="Home.html#aboutSection">About Me</a> /
+        <a href="Home.html" class="active">Home</a> / <a href="Projects.html">Projects</a> /
+        <a href="Experience.html">Education & Experience</a> /
         <a href="Contact.html">Contact</a>
       </span>
     </h1>
@@ -23,7 +23,7 @@
 
   <!-- Title Section -->
   <section id="titleSection">
-    <span id="titleHomePage">HTML Only Site!</span>
+    <span id="titleHomePage">HTML & CSS Only Site!</span>
     <h2 id="titleCaption">Designed and built by Prajwal Uppal</h2>
   </section>
 
@@ -31,7 +31,9 @@
 
   <!-- About Me Section -->
   <section id="aboutSection">
-    <h2 class="sectionTitle">About Me</h2>
+    <div id="sectionTitleWrapper">
+      <h2 class="sectionTitle">About Me</h2>
+    </div>
     <div id="aboutContainer">
       <img id="profilePicture" src="Media/Images/1758528598933.jpeg" alt="Photo of Prajwal Uppal" />
       <p class="aboutText">
@@ -67,75 +69,68 @@
       <h2 class="sectionTitle">Overview</h2>
 
       <div class="overviewGrid">
-
-        <div class="overviewCard">
-          <h3>Projects</h3>
-          <ul>
-            <li>HTML Portfolio Website</li>
-            <li>
-              <a href="https://github.com/Praj-Uppal/FarmGame" target="_blank">
+        <a href="Projects.html" class="overviewLink">
+          <div class="overviewCard">
+            <h3>Projects</h3>
+            <ul>
+              <li>HTML Portfolio Website</li>
+              <li>
                 Terminal-Based Farming Game (C++)
-              </a>
-            </li>
-            <li>
-              <a href="https://www.notion.so/DIY-Irrigation-System-2c6e80f544fa80089d91f333d89253d3" target="_blank">
+              </li>
+              <li>
                 DIY Irrigation System
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/Praj-Uppal/WordleinMatlab" target="_blank">
+              </li>
+              <li>
                 Wordle MATLAB Recreation
-              </a>
-            </li>
-          </ul>
-        </div>
+              </li>
+            </ul>
+          </div>
+        </a>
+        <a href="Experience.html" class="overviewLink">
+          <div class="overviewCard">
+            <h3>Work Experience</h3>
+            <p class="overviewItem">
+              <strong>Stage 2 Maths Tutor — Underdale High School</strong><br />
+              Jan 2024 – Nov 2025
+            </p>
+            <ul>
+              <li>Supporting students during class</li>
+              <li>Explaining complex concepts clearly</li>
+              <li>Preparing and marking assessments</li>
+            </ul>
 
-        <div class="overviewCard">
-          <h3>Work Experience</h3>
-          <p class="overviewItem">
-            <strong>Stage 2 Maths Tutor — Underdale High School</strong><br />
-            Jan 2024 – Nov 2025
-          </p>
-          <ul>
-            <li>Supporting students during class</li>
-            <li>Explaining complex concepts clearly</li>
-            <li>Preparing and marking assessments</li>
-          </ul>
+            <p class="overviewItem">
+              <strong>Office Administration — AusDreamz</strong><br />
+              Jan 2024 – Jul 2025
+            </p>
+            <ul>
+              <li>Organising and maintaining office files</li>
+              <li>Working directly with clients</li>
+              <li>Drafting visa applications</li>
+            </ul>
+          </div>
+        </a>
+        <a href="Experience.html" class="overviewLink">
+          <div class="overviewCard">
+            <h3>Education</h3>
+            <p class="overviewItem">
+              <strong>University of Adelaide</strong>
+            </p>
+            <p>
+              Bachelor of Mechanical Engineering (Honours)<br />
+              Bachelor of Computer & Mathematical Sciences<br />
+              GPA: 7.0<br />
+            </p>
 
-          <p class="overviewItem">
-            <strong>Office Administration — AusDreamz</strong><br />
-            Jan 2024 – Jul 2025
-          </p>
-          <ul>
-            <li>Organising and maintaining office files</li>
-            <li>Working directly with clients</li>
-            <li>Drafting visa applications</li>
-          </ul>
-        </div>
-
-        <div class="overviewCard">
-          <h3>Education</h3>
-          <p class="overviewItem">
-            <strong>University of Adelaide</strong>
-          </p>
-          <p>
-            Bachelor of Mechanical Engineering (Honours)<br />
-            Bachelor of Computer & Mathematical Sciences<br />
-            GPA: 7.0<br />
-            <a href="Media/2025 Sem2 Transcript.pdf" target="_blank">
-              View Transcript
-            </a>
-          </p>
-
-          <p class="overviewItem"><strong>Selected Coursework</strong></p>
-          <ul>
-            <li>Stress Analysis and Design</li>
-            <li>Design Practice</li>
-            <li>Programming for MATLAB & C</li>
-            <li>Object-Oriented Programming (C++)</li>
-          </ul>
-        </div>
-
+            <p class="overviewItem"><strong>Completed Coursework</strong></p>
+            <ul>
+              <li>Stress Analysis and Design</li>
+              <li>Design Practice</li>
+              <li>Programming for MATLAB & C</li>
+              <li>Object-Oriented Programming (C++)</li>
+            </ul>
+          </div>
+        </a>
       </div>
     </section>
 
