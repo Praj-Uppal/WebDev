@@ -55,7 +55,7 @@ body {
 
 #titleHomePage {
   font-size: 3.6rem;
-  font-family: cursive;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-style: italic;
 }
 
@@ -403,6 +403,7 @@ hr {
   font-size: 1.45rem;
 }
 
+
 .overviewLink {
   text-decoration: none;
   color: inherit;
@@ -418,4 +419,15 @@ hr {
 
 .overviewCard p {
   font-size: 1.45rem;
+}
+
+.experienceCard a {
+  font-weight: 600;
+  color: #333;
+  color: var(--accent, #2f5d8a);
+  text-decoration: none;
+}
+
+.experienceCard a:hover {
+  text-decoration: underline;
 }
